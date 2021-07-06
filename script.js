@@ -1,1 +1,1 @@
-console.log(18+19);
+console.log(18);
