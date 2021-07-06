@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Table</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      .container {
+        width: 800px;
+        height: 400px;
+        margin: 10px auto;
+        padding: 10px 10px;
+        position: relative;
+      }
+
+      #table {
+        width: 450px;
+        height: 25px;
+        border: 4px solid black;
+        margin: 25px auto;
+        padding: 2px 2px;
+        background-color: chocolate;
+        position: relative;
+        top: 30px;
+      }
+
+      #table::after {
+        content: "";
+        width: 400px;
+        height: 11px;
+        border: 4px solid black;
+        border-top: none;
+        margin: 25px auto;
+        padding: 2px 2px;
+        background-color: khaki;
+        position: absolute;
+        top: 8px;
+        left: 20px;
+      }
+
+      #table-leg {
+        height: 250px;
+        width: 20px;
+        position: relative;
+        top: 24px;
+        left: 215px;
+        border: 4px solid black;
+        border-top: none;
+        background-color: chocolate;
+        transform: skewX(-18deg);
+      }
+
+      #table-leg::after {
+        content: "";
+        height: 250px;
+        width: 20px;
+        position: absolute;
+        top: 0px;
+        left: 346px;
+        border: 4px solid black;
+        border-top: none;
+        background-color: chocolate;
+        transform: skewX(35deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="table"></div>
+      <div id="table-leg"></div>
+    </div>
+    <h2>Table</h2>
+  </body>
+</html>
